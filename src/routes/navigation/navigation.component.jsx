@@ -1,7 +1,6 @@
 import {Outlet, Link} from 'react-router-dom'
 import {ReactComponent as Crown} from "../../assets/crown.svg";
 import './navigation.styles.scss';
-import SignIn from '../sign-in/sign-in.component'
 
 const Navigation = () => {
     return (

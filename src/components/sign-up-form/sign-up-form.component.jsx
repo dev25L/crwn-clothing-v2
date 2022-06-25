@@ -16,8 +16,6 @@ const defaultFormFields = {
     confirmPassword: ''
 }
 
-
-
 const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields)
     const {displayName, email, password, confirmPassword} = formFields
@@ -56,7 +54,7 @@ const SignUpForm = () => {
     return (
         <div className='sign-up-container'>
             <h2>Don't have an account?</h2>
-            <span className='sign-up-'>Sign up with your email and password</span>
+            <span className='sign-up-label'>Sign up with your email and password</span>
             <form onSubmit={handleSubmit}>
                 <FormInput
                     label="Display Name"
@@ -90,7 +88,7 @@ const SignUpForm = () => {
                     name="confirmPassword"
                     value={confirmPassword}
                 />
-                <Button buttonType='inverted' type="submit">Sign Up</Button>
+                <Button type="submit">Sign Up</Button>
             </form>
         </div>
     )
